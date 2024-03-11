@@ -1,32 +1,32 @@
 export default function Catalog() {
     let data = [
         {
-            'name':'Marketing avanzado',
+            'name':'Advanced marketing techniques',
             'price':'$299.99',
             'img':'./shop-1.jpg'
         },
         {
-            'name':'Marketing principiante',
+            'name':'Marketing for beginners',
             'price':'$99.99',
             'img':'./shop-2.jpg'
         },
         {
-            'name':'Tu primera tienda',
+            'name':'Your first store',
             'price':'$89.90',
             'img':'./shop-3.jpg'
         },
         {
-            'name':'Consiguiendo proveedores',
+            'name':'Finding suppliers',
             'price':'$249.99',
             'img':'./shop-4.jpg'
         },
         {
-            'name':'Eligiendo los productos',
+            'name':'Choosing products',
             'price':'$49.99',
             'img':'./hero-2.jpg'
         },
         {
-            'name':'Herramientas de SEO',
+            'name':'SEO tools',
             'price':'$149.99',
             'img':'./services-2.jpg'
         }
@@ -35,7 +35,7 @@ export default function Catalog() {
        <section className="">
         <div className="flex flex-col items-center">
             <div className="py-20 bg-[color:var(--color-2)] text-white w-full h-full">
-                <p className="text-4xl font-bold copy-shop review-title text-center">Invierte en tu negocio</p>
+                <p className="text-4xl font-bold copy-shop review-title text-center">Invest in your business</p>
             </div>
             <section className="w-full section-shop py-20">
             <div className="flex justify-center m-auto flex-wrap items-center max-w-7xl flex-auto">

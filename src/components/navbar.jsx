@@ -24,14 +24,14 @@ export default function Navbar() {
        <header className="block z-20 header bg-[color:var(--color-1)] relative">
         <div className="navWrapper w-full flex flex-row justify-around items-center items-center p-5">
           <div className="logoContainer flex-1 text-3xl lg:text-2xl font-bold text-center flex flex-row justify-start justify-center items-center">
-            <p className='cursor-pointer'>Ocson</p>
+            <p className='cursor-pointer'>OCSON</p>
           </div>
           <nav className="flex-1 text-md font-light ml-1 ml-12 desktop-nav">
             <ul className="flex flex-row justify-center">
-              <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><NavLink to="/#">Inicio</NavLink></li>
-              <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><NavLink to="/cursos">Cursos</NavLink></li>
-              <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><NavLink to="/contact">Contacto</NavLink></li>
-              <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><NavLink to="/tienda">Tienda</NavLink></li>
+              <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><NavLink to="/#">Home</NavLink></li>
+              <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><NavLink to="/cursos">Courses</NavLink></li>
+              <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><NavLink to="/contact">Contact</NavLink></li>
+              <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><NavLink to="/tienda">Shop</NavLink></li>
               <li className="mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer">
                 <div className="content flex items-center w-fit rounded-md flex flex-row justify-center items-center">
                   <a className='pr-2 font-medium'>
@@ -60,10 +60,10 @@ export default function Navbar() {
           }} src={AionData} ref={playerRef}  style={{ height: '45px', width: '45px' }} className='z-50 relative'>
           </Player>
             <ul id='bgmenu' className="flex text-3xl font-medium flex-col absolute top-0 right-0 bg-navbur bg-opacity-100 pt-32 pl-10 md:pl-20 w-full h-100 justify-start items-start">
-              <li className='py-6 cursor-pointer'><NavLink onClick={enableScroll} to="/#">Inicio</NavLink></li>
-              <li className='py-6 cursor-pointer'><NavLink onClick={enableScroll} to="/cursos">Cursos</NavLink></li>
-              <li className='py-6 cursor-pointer'><NavLink onClick={enableScroll} to="/contact">Contacto</NavLink></li>
-              <li className='py-6 cursor-pointer'><NavLink onClick={enableScroll} to="/tienda">Tienda</NavLink></li>
+              <li className='py-6 cursor-pointer'><NavLink onClick={enableScroll} to="/#">Home</NavLink></li>
+              <li className='py-6 cursor-pointer'><NavLink onClick={enableScroll} to="/cursos">Courses</NavLink></li>
+              <li className='py-6 cursor-pointer'><NavLink onClick={enableScroll} to="/contact">Contact</NavLink></li>
+              <li className='py-6 cursor-pointer'><NavLink onClick={enableScroll} to="/tienda">Shop</NavLink></li>
               <li className="contactContainer grow text-md text-center w-min flex justify-center nav-cta">
                 <div className="content flex items-center w-fit rounded-md flex flex-row justify-center items-center">
                   <a className='pr-2 font-medium'>
@@ -78,10 +78,9 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-
         </div>
         <div className='bg-[color:var(--color-3)] py-1 text-white'>
-          <p className='text-center font-light text-sm'>Sitio en construcciòn, no dude en reportar cualquier error.</p>
+          <p className='text-center font-light text-sm'>Our shop is under maintenance. Cart is not working, contact us for further information.</p>
         </div>
       </header>
     )

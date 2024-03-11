@@ -34,7 +34,7 @@ export default function Shop() {
     ]
     function showModal(e) {
         document.getElementById('product-pic').src = this.img
-        document.getElementById('product-title').textContent = this.name_es
+        document.getElementById('product-title').textContent = this.name_en
         document.getElementById('product-description').textContent = this.price
         document.getElementById('productShow').style.display = 'block'
         document.getElementById('product-chart').style.display = 'none'
@@ -54,7 +54,7 @@ export default function Shop() {
        <section className="mb-40">
         <div className="flex flex-col items-center" id="product-chart" >
             <div className="py-16 w-full bg-[color:var(--color-2)] text-white">
-                <p className="text-4xl font-bold copy-shop text-center">Nuestro catalogo</p>
+                <p className="text-4xl font-bold copy-shop text-center">Our products</p>
             </div>
             <section className="w-full py-20">
             <div className="flex justify-center m-auto flex-wrap items-center max-w-7xl flex-auto">
@@ -64,7 +64,7 @@ export default function Shop() {
                             <button onClick={showModal.bind(data)}>
                                 <img className="catalog-pic" src={data.img} alt="" />
                             </button>
-                            <p className="my-4 text-xl">{data.name_es}</p>
+                            <p className="my-4 text-xl">{data.name_en}</p>
                             <p className="text-xl">{data.price}</p>
                         </div>
                     )
@@ -100,8 +100,8 @@ export default function Shop() {
                                     }</div>
                                 </div>
                                 <div>
-                                    <button className="chart-button mr-4 disabled tooltip" title="No Disponible">Añadir al carro</button>
-                                    <button onClick={hideModal} className="">Volver</button>
+                                    <button className="chart-button mr-4 disabled tooltip" title="No Disponible">Add to cart</button>
+                                    <button onClick={hideModal} className="">Back</button>
                                 </div>
                             </div>
                     </div>

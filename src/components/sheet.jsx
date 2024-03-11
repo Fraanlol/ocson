@@ -28,35 +28,35 @@ export async function action() {
                 <div className="flex">
                     <div className="py-1"><svg className="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
                     <div>
-                    <p className="font-bold">Gracias por enviar tu mensaje</p>
-                    <p className="text-sm">Nos pondremos en contacto pronto</p>
+                    <p className="font-bold">Thank you for sending your message</p>
+                    <p className="text-sm">We will be in touch soon.</p>
                     </div>
                 </div>
             </div>
             <div className="w-full max-w-xl m-auto z-20 relative text-white pt-16">
-                <p className="text-4xl font-bold mb-8 text-center">Contáctanos</p>
+                <p className="text-4xl font-bold mb-8 text-center">Contact us</p>
             <Form method="post" id='formulario' className="rounded px-8 pt-6 pb-8 mb-4">
                 <div className="mb-4">
                     <label className="block text-sm font-bold mb-2" for="username">
-                        Nombre
+                        Name
                     </label>
                     <input className="required shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline" id="username" type="name" placeholder="Your name"/>
                 </div>
                 <div className="mb-4">
                     <label className="block text-sm font-bold mb-2" for="mail">
-                        Correo
+                        Email
                     </label>
                     <input className="required shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline" id="mail" type="mail" placeholder="Email Adress"/>
                 </div>
                 <div className="mb-4">
                     <label className="block text-sm font-bold mb-2" for="text">
-                        Mensaje
+                        Message
                     </label>
                     <input className=" required shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline" id="text" type="text" placeholder="Enter your message"/>
                 </div>
                 <div className="flex items-center justify-center">
                     <button className="bg-[color:var(--color-3)] hover:bg-[color:var(--color-2)] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" id="contactButton" type="submit">
-                        Enviar
+                        Send
                     </button>
                 </div>
             </Form>
@@ -64,16 +64,16 @@ export async function action() {
         <div className=" w-full section-sheet bg-[color:var(--color-3)] py-16 z-20 relative">
         <div className="m-auto flex flex-col flex-auto justify-around items-start flex-wrap max-w-7xl py-12 bg-[color:var(--color-3)] text-white">
             <div className="mb-16 px-16">
-                <p className="text-4xl mb-12">Ubicación</p>
+                <p className="text-4xl mb-12">Location</p>
                 <div className='flex flex-row justify-start items-start gap-x-16 gap-y-8 flex-wrap'>
                     <div>
-                        <p className="text-xl font-bold">Dirección</p>
+                        <p className="text-xl font-bold">Address</p>
                         <p>1342 NM 333 STE C 5074</p>
                         <p>Tijeras, USA</p>
                     </div>
                     <div>
-                        <p className="text-xl font-bold">Horario Online</p>
-                        <p>Lunes - Viernes</p>
+                        <p className="text-xl font-bold">Online attendance</p>
+                        <p>Mon - Fri</p>
                         <p>10:00 - 19:00 (GMT-3)</p>
                     </div>
                 </div>
