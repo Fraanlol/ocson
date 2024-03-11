@@ -68,8 +68,8 @@ export async function action() {
                 <div className='flex flex-row justify-start items-start gap-x-16 gap-y-8 flex-wrap'>
                     <div>
                         <p className="text-xl font-bold">Address</p>
-                        <p>1342 NM 333 STE C 5074</p>
-                        <p>Tijeras, USA</p>
+                        <p>8 The Green, Dover 19901</p>
+                        <p>Delaware, USA</p>
                     </div>
                     <div>
                         <p className="text-xl font-bold">Online attendance</p>
@@ -79,7 +79,7 @@ export async function action() {
                 </div>
             </div>
             <div className="google-map-code w-11/12 pl-16">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.605799273567!2d-106.267927!3d35.09158099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8718bc3db13e2a89%3A0x7907adf26b0dd949!2s1342%20NM-333%20c%205074%2C%20Tijeras%2C%20NM%2087059%2C%20USA!5e0!3m2!1sen!2sar!4v1709851972292!5m2!1sen!2sar" height="450">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3093.7923639591704!2d-75.5242117!3d39.156704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c7657e0f270c79%3A0x3cc77cd9d14827e8!2s8%20The%20Green%2C%20Dover%2C%20DE%2019901!5e0!3m2!1sen!2sus!4v1710184033615!5m2!1sen!2sus" height="450">
                 </iframe>
             </div>
         </div>
