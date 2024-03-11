@@ -80,7 +80,7 @@ h1{
     padding-top: 0.5rem; 
     padding-bottom: 0.5rem;
     padding-left: 0.5rem;
-    padding-right: 18rem;
+    padding-right: 14rem;
     border: 1px solid lightblue;
     border-radius: 3px;
     outline: none;
@@ -283,6 +283,7 @@ iframe{
 
   .footer > div{
     margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .about-container{
@@ -341,7 +342,7 @@ iframe{
   }
   
   .footer-contact{
-    padding-right: 8rem;
+    padding-right: 4rem;
   }
 }
 

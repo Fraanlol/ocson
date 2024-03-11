@@ -51,7 +51,7 @@ export default function Shop() {
     }
 
     return (
-       <section>
+       <section className="mb-40">
         <div className="flex flex-col items-center" id="product-chart" >
             <div className="py-16 w-full bg-[color:var(--color-2)] text-white">
                 <p className="text-4xl font-bold copy-shop text-center">Nuestro catalogo</p>
