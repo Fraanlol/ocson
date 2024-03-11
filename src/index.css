@@ -131,7 +131,7 @@ h1{
 }
 
 .section-shop{
-  background-color: var(--color-1);
+  background-color: var(--color-light);
 }
 
 .hero-img{
@@ -374,11 +374,7 @@ iframe{
     text-align: center;
     margin: auto;
   }
-
-  .footer{
-    max-width: 320px;
-  }
-
+  
   .copy-shop{
     font-size: 2rem;
   }

@@ -13,8 +13,8 @@ export default function Root() {
          <Navbar/>
          <Hero />
          <Services/>
-         <Reviews/>
          <About/>
+         <Reviews/>
          <Footer/>
       <ScrollRestoration />
       </>
