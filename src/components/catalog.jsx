@@ -32,10 +32,10 @@ export default function Catalog() {
         }
     ]
     return (
-       <section className="mb-40">
+       <section className="">
         <div className="flex flex-col items-center">
-            <div className="mb-40">
-                <p className="text-4xl font-bold copy-shop">Invierte en tu negocio</p>
+            <div className="py-20 bg-[color:var(--color-2)] text-white w-full h-full">
+                <p className="text-4xl font-bold copy-shop review-title text-center">Invierte en tu negocio</p>
             </div>
             <section className="w-full section-shop py-20">
             <div className="flex justify-center m-auto flex-wrap items-center max-w-7xl flex-auto">
@@ -43,7 +43,7 @@ export default function Catalog() {
                     return(
                         <div className="m-4" key={i}>
                             <img className="catalog-pic" src={data.img} alt="" />
-                            <p className="my-4 text-xl">{data.name}</p>
+                            <p className="my-4 text-2xl">{data.name}</p>
                             <p className="text-xl">{data.price}</p>
                         </div>
                     )

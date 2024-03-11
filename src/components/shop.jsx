@@ -53,8 +53,8 @@ export default function Shop() {
     return (
        <section className="mb-40">
         <div className="flex flex-col items-center" id="product-chart" >
-            <div className="mb-16">
-                <p className="text-4xl font-bold copy-shop">Nuestro catalogo</p>
+            <div className="py-16 w-full bg-[color:var(--color-2)] text-white">
+                <p className="text-4xl font-bold copy-shop text-center">Nuestro catalogo</p>
             </div>
             <section className="w-full py-20">
             <div className="flex justify-center m-auto flex-wrap items-center max-w-7xl flex-auto">
@@ -72,7 +72,7 @@ export default function Shop() {
             </div>
             </section>
         </div>
-        <section id="productShow" className="hidden bg-[color:var(--color-1)] w-full h-full">
+        <section id="productShow" className="hidden bg-[color:var(--color-light)] w-full h-full">
             <div className="flex justify-center max-w-7xl flex-wrap items-center m-auto">
                     <div className="m-4 flex flex-row justify-center items-center flex-wrap gap-12">
                             {/* Left */}
@@ -92,7 +92,7 @@ export default function Shop() {
                                     <div id="product-variants" className='flex flex-row'>{
                                         optionsData && optionsData.map((k,i) => {
                                             return(
-                                                <div className='ml-2' key={i}>
+                                                <div className='ml-2 border border-black rounded-md' key={i}>
                                                    <p className='p-4 colorPick' style={{"backgroundColor": k.code}} onClick={changeBackg.bind(k)}></p>
                                                 </div>
                                             )

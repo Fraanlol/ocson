@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 :root{
-  --color-1: #FFF1D8;
-  --color-2: #401314;
-  --color-3: #F2555A;
+  --color-1: #E9ECF3;
+  --color-2: #0B1524;
+  --color-3: #3D6399;
   --color-light: #FFFFFF;
   --color-grey: #B8C0CC;
-  --color-dark: #0D131A;
+  --color-dark: #121315;
   --border-shop: #350303;
   color: white;
   font-size: 16px;
@@ -19,7 +19,7 @@ a.active{
 }
 
 body{
-  background-color: var(--color-1);
+  background-color: var(--color-light);
   color: black;
   font-family: "Open Sans", sans-serif;;
 }
@@ -44,34 +44,28 @@ h1{
 
 .about-img{
   object-fit: cover;
-  width: 400px;
-  height: 570px;
+  width: 852px;
+  height: 349px;
 }
 
-img{
-  object-fit: cover;
-    width: 240px;
-    height: 350px;
-}
-
-.right-img{
-  transform: translateY(105px);
-}
-
-.left-img{
-  transform: translateY(-98px);
-}
 #lottie{
   float:right;
 }
 
 .hero-mainContent{
-  max-width: 600px;
+  max-width: 1200px;
+}
+
+.img-review{
+  width: 144px;
+  height: 160px;
+  object-fit: cover;
 }
 
 .section-reviews{
-  background-color: var(--color-2);
+  background-color: var(--color-light);
   width: 100%;
+  color: var(--color-dark);
 }
 
 .review-screen{
@@ -81,11 +75,6 @@ img{
     height: 340px;
 }
 
-
-.footer{
-  margin: 0 auto 5rem;
-    width: max-content;
-}
 
 .footer-contact{
     padding-top: 0.5rem; 
@@ -126,11 +115,7 @@ img{
 
 .show{
   min-height: 100rem;
-  position: fixed;
-  z-index: 10;
-  background: var(--color-1);
-  transform: translateY(-64px);
-}
+  background: var(--color-1);}
 
 .no-scroll{
   overflow-y: hidden;
@@ -146,12 +131,57 @@ img{
 }
 
 .section-shop{
-  background-color: var(--color-3);
+  background-color: var(--color-1);
+}
+
+.hero-img{
+  padding-top: 20rem;
+  padding-bottom: 5rem;
+}
+
+.block-background{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -0.5px;
+  left: 0;
+  z-index: 13;
+  overflow: hidden;
+  background-color: var(--background-color);
+  transition: background-color .3s ease-in-out, height 1ms linear 999s;
+}
+
+.block_background_image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.block_background_overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #1d1e20;
+  opacity: .7;
+}
+
+.block_background_image_fixed{
+  position: fixed;
+  height: 100vh;
 }
 
 .successMessage{
   display: block;
   position: relative;
+  visibility: visible;
   bottom: 4rem;
   right: 0;
   width: fit-content;
@@ -184,9 +214,6 @@ img{
 }
 
 #productShow{
-  margin-top: -16rem;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
   margin-bottom: -7rem;
 }
 
@@ -199,6 +226,16 @@ img{
   color: white;
 }
 
+.services-pic{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+iframe{
+  width: -webkit-fill-available;
+}
+
 @media only screen and (max-width:1080px){
   .left-container{
     order: 2 !important; 
@@ -206,24 +243,6 @@ img{
 
   .section-hero{
     flex-flow: column;
-  }
-  .header{
-    margin-bottom: 4rem;
-  }
-
-  #productShow{
-    margin-top: -7rem;
-  }
-
-  .right-img{
-    transform: translate(-81px, 61px);
-  }
-
-  .left-img {
-    transform: translate(96px, -137px);
-  }
-  .section-about{
-    margin-top: -20rem;
   }
 
   .services-container{
@@ -263,7 +282,7 @@ img{
   }
 
   .footer > div{
-    margin-left: 0;
+    margin-left: 1rem;
   }
 
   .about-container{
@@ -273,11 +292,9 @@ img{
   .about-img-container{
     margin-right: 3rem;
   }
-}
 
-@media only screen and (max-width:600px){
-  iframe{
-    width: 320px;
+  .hide-small{
+    display: none;
   }
 }
 
@@ -293,33 +310,45 @@ img{
   .logoContainer{
     justify-content: flex-start;
   }
+
+  .hero-img{
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+  }
+
+  .hero-copy-mobile{
+    align-items: center;
+  }
+
+  .copy-review{
+    max-width: 7rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+  .review-title{
+    font-size: 2rem;
+  }
+
+  .copy-shop{
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width:500px){
   h1{
     font-size: 3rem;
   }
-
-  .section-about {
-    margin-top: -12rem;
-  }
-
+  
   .footer-contact{
     padding-right: 8rem;
   }
 }
 
 @media only screen and (max-width:420px){
-  .left-img, .right-img{
-    display: none;
-  }
 
   .mobile-color{
     color: var(--color-3);
-  }
-
-  .section-about{
-    margin-top: -6rem;
   }
   
   .about-flexible{

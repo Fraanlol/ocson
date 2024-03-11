@@ -12,10 +12,9 @@ export default function Root() {
       <>
          <Navbar/>
          <Hero />
-         <About/>
          <Services/>
          <Reviews/>
-         <Info/>
+         <About/>
          <Footer/>
       <ScrollRestoration />
       </>
